@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            box-sizing:border-box;
+            background-color: rgb(223, 160, 166);
+        }
+        .header{
+            background-color: pink;
+            padding-block: 3%;
+            text-align: center;
+            font-weight: bolder;
+            font-family:cursive;
+            font-size: xxx-large;
+        }
+        .header2{
+            font-family:cursive;
+            font-size:x-large;
+            background-color: pink;
+            padding-block: 3%;
+            padding-left: 3%;
+            font-weight: bold;
+        }
+        .project_header{
+            font-family:cursive;
+            font-size: large;
+            color: black;
+            text-decoration:wavy;
+            font-size: x-large;
+            font-weight: 900;
+        }
+        .project_header:hover{
+            background-color: pink;
+        }
+        .content{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:auto;
+            background-color:rgba(255, 255, 255, 0.53);
+            padding-block: 1%;
+            padding-left: 3%;
+            font-size:larger;
+            padding-right:3%;
+            text-align:justify;
+        }
+        .mini_content{
+            margin:auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .description{
+            margin:auto;
+            background-color:rgba(255, 255, 255, 0.685);
+            display: block;
+            width:300px;
+            height: 150px;
+            padding-block: 9%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        .icon{
+            height:50px;
+            float: left;
+            padding-right: 0.5%;
+            padding-bottom: 3%;
+
+        }
+        .container {
+            border-radius: 500%;
+            position: relative;
+            height:200px;
+            width:200px;
+        }
+        .image {
+            border-radius: 500%;
+            display: block;
+            height: 200px;
+            width: 200px;
+        }
+
+        .overlay {
+            border-radius:500%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            width: 200px;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: pink;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="body">
+    <h1 class="header">elisa burtscher</h1>
+    <center>
+        <div class="container">
+            <img src="girl.jpg" class="image">
+            <div class="overlay">
+                <div class="text">
+                    <a href="https://www.instagram.com/">
+                        <img style="height:70px;"  src="instagram.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </center>
+    <br>
+    <h2 class="header2">about me...</h2>
+    <div class="content">
+        Hello there, I'm Elisa, a 15-year-old exchange student hailing from the beautiful city of Vienna. Currently, I'm diving into the tenth grade at St. Anne's Belfield School. Ever since I was 10 years old, coding has been my passion, and I've ventured into various languages like JavaScript, HTML, CSS, and Python. Exploring different cultures while expanding my coding skills has become a major part of who I am. Let's see where this exciting journey takes me next! 
+    </div>
+        <br>
+    <h2 class="header2">my projects:</h2>
+    <div>
+        <table class="content">
+        <tr class="mini_content">
+            <td class="mini_content">
+                <img class="icon" src="child.png">
+                <a href="https://github.com/elisaburtscher/Bewerbungsformular-Kindergarten/tree/main" class="project_header">KINDERGARTEN</a>
+                <div style="text-align:left; padding-left:3%; padding-right:3%;" class="description">This project provides an application form for kindergarten employees.</div>
+                
+            </td>
+            <td class="mini_content">        
+                <img class="icon" src="coffee4.png">
+                <a href="https://github.com/elisaburtscher/CoffeeShop" class="project_header">COFFEE SHOP</a>
+                <div style="text-align:left; padding-left:3%; padding-right:3%;" class="description">description of project goes here</div>
+            </td>
+            <td class="mini_content">
+                <img class="icon" src="cat.png">
+                <a href="https://github.com/elisaburtscher/Pets" class="project_header">PETS</a>
+                <div style="text-align:left; padding-left:3%; padding-right:3%;" class="description">description of project goes here</div>
+            </td>
+            <td class="mini_content">
+                <img class="icon" src="tiktaktoe.png">
+                <a href="Project1.html" class="project_header">TIK-TAK-TOE</a>
+                <div style="text-align:left; padding-left:3%; padding-right:3%;" class="description">description of project goes here</div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
